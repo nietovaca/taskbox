@@ -25,9 +25,11 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "init-msw": "msw init public/"
+    "init-msw": "msw init public/",
+    "test-storybook": "test-storybook"
   },
   "devDependencies": {
+    "@playwright/test": "^1.38.0",
     "@storybook/addon-a11y": "^7.4.2",
     "@storybook/addon-essentials": "^7.4.2",
     "@storybook/addon-interactions": "^7.4.2",
@@ -36,7 +38,9 @@
     "@storybook/jest": "^0.2.2",
     "@storybook/react": "^7.4.2",
     "@storybook/react-vite": "^7.4.2",
+    "@storybook/test-runner": "^0.13.0",
     "@storybook/testing-library": "^0.2.1",
+    "@types/node": "^20.6.2",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
@@ -46,5 +50,8 @@
     "storybook": "^7.4.2",
     "vite": "^4.2.0"
   },
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@3.6.3",
+  "msw": {
+    "workerDirectory": "public"
+  }
 }
